@@ -54,6 +54,7 @@ We report **validation** and **test** results, plus **3-seed mean ± std** (RF-S
 
 ## 4) Repository Structure
 
+```text
 /  
 ├─ 36106/assignment/AT2/data/ # put datasets here  
 ├─ 36106-25SP-AT2-25948860-EDA.ipynb # EDA  
@@ -71,6 +72,7 @@ We report **validation** and **test** results, plus **3-seed mean ± std** (RF-S
 ├─ 36106-25SP-AT2-25948860-experiment-4.ipynb # Exp4 (SVM)  
 ├─ 36106-25SP-AT2-25948860-experiment-4.html  
 └─ 36106-25SP-AT2-25948860-project_report.docx # Final report  
+```
 
 ---
 

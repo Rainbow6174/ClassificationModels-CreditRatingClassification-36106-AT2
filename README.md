@@ -74,7 +74,7 @@ We report **validation** and **test** results, plus **3-seed mean ± std** (RF-S
 
 ---
 
-## 5) How to Run (Local Only)
+## 5) How to Run
 
 **Python 3.9+** recommended.
 
@@ -123,7 +123,7 @@ Exp3 (HGB) — HGB-SAFE and policy-variable ablation
 
 Exp4 (SVM) — contrast model; fairness ablation
 
-## 7) Key Results (Short)
+## 7) Key Results
 RF-SAFE: most balanced (macro-F1 & bAcc); stable across seeds
 
 HGB-SAFE: similar accuracy; better calibration (good for thresholds)

@@ -7,7 +7,7 @@ Predict customer credit rating (**Good / Standard / Poor**) for banking use case
 - **Poor** → early warning
 
 This repo includes **EDA**, **data preparation**, a **baseline**, and **four experiments** using **scikit-learn**.  
-**Runs locally** (no Colab).
+**Runs locally**.
 
 ---
 

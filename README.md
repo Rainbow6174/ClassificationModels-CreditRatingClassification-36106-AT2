@@ -159,5 +159,3 @@ Questions: open an issue in this repo
 
 ## TL;DR
 Put data in 36106/assignment/AT2/data/ → run Preparation → Baseline → Experiments → read the report.
-
-::contentReference[oaicite:0]{index=0}

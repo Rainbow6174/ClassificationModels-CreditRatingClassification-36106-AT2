@@ -82,75 +82,75 @@ Put datasets under: 36106/assignment/AT2/data/
 
 Open and run notebooks in this order:
 
-EDA
+**EDA**
 
-Preparation
+**Preparation**
 
-Baseline
+**Baseline**
 
-Experiment 1–4
+**Experiment 1–4**
 
 Run all cells top → bottom.
 
-See the project_report.docx for final numbers, figures, and decisions.
+See the **project_report.docx** for final numbers, figures, and decisions.
 
 ## 6) Notebook Summaries
-EDA
-Class balance (Good/Standard/Poor)
+**EDA**
+- Class balance (Good/Standard/Poor)
 
-Key features and simple plots
+- Key features and simple plots
 
-Preparation
-Remove PII (IDs, names, emails, phones, addresses)
+**Preparation**
+- Remove PII (IDs, names, emails, phones, addresses)
 
-Fix invalid values (e.g., negative delinquency → 0)
+- Fix invalid values (e.g., negative delinquency → 0)
 
-Build DTI and EMI-to-income
+- Build `DTI` and `EMI-to-income`
 
-Log-transform long-tailed amounts
+- Log-transform long-tailed amounts
 
-Split 70/15/15 and fit preprocessors on train only (avoid leakage)
+- **Split 70/15/15** and **fit preprocessors on train only** (avoid leakage)
 
-Baseline
-Decision Tree baseline (simple, interpretable)
+**Baseline**
+- Decision Tree baseline (simple, interpretable)
 
-Experiments
-Exp1 (CART) — tuned tree baseline
+**Experiments**
+- **Exp1 (CART)** — tuned tree baseline
 
-Exp2 (RF) — RF-SAFE (production) and SAFE vs LEAK check
+- **Exp2 (RF)** — RF-SAFE (production) and SAFE vs LEAK check
 
-Exp3 (HGB) — HGB-SAFE and policy-variable ablation
+- **Exp3 (HGB)** — HGB-SAFE and policy-variable ablation
 
-Exp4 (SVM) — contrast model; fairness ablation
+- **Exp4 (SVM)** — contrast model; fairness ablation
 
 ## 7) Key Results
-RF-SAFE: most balanced (macro-F1 & bAcc); stable across seeds
+- **RF-SAFE:** most balanced (macro-F1 & bAcc); stable across seeds
 
-HGB-SAFE: similar accuracy; better calibration (good for thresholds)
+- **HGB-SAFE:** similar accuracy; better calibration (good for thresholds)
 
-LEAK features (e.g., credit_mix, cc_interest_rate, credit_limit_change) inflate metrics → not for deployment
+- **LEAK features** (e.g., `credit_mix`, `cc_interest_rate`, `credit_limit_change`) inflate metrics → not for deployment
 
-Sensitive feature (gender) excluded for fairness/compliance
+- **Sensitive feature** (`gender`) excluded for fairness/compliance
 
-Full results, reliability plots, and SAFE→LEAK bars are in the project_report.docx.
+Full results, reliability plots, and SAFE→LEAK bars are in the **project_report.docx**.
 
 ## 8) Ethics & Fairness
-No PII used in modelling
+- No PII used in modelling
 
-No sensitive or policy-derived features in production
+- No sensitive or policy-derived features in production
 
-Group checks (TPR/FPR). If gaps > 0.10, apply small group thresholds (±0.02) with minimal macro-F1 impact
+- Group checks (TPR/FPR). If gaps > 0.10, apply small **group thresholds** (±0.02) with minimal macro-F1 impact
 
-Indigenous impacts considered (near-threshold human review; clear recourse)
+- Indigenous impacts considered (near-threshold human review; clear recourse)
 
 ## 9) Reproducibility
-Fixed random seeds
+- Fixed random seeds
 
-Train-only fit for all preprocessors and models (prevent leakage)
+- Train-only fit for all preprocessors and models (prevent leakage)
 
-3-seed mean ± std for RF-SAFE and HGB-SAFE (see report)
+- **3-seed** mean ± std for RF-SAFE and HGB-SAFE (see report)
 
-Feature policy documented (SAFE vs LEAK)
+- Feature policy documented (SAFE vs LEAK)
 
 ## 10) License & Contact
 For coursework use
@@ -158,4 +158,4 @@ For coursework use
 Questions: open an issue in this repo
 
 ## TL;DR
-Put data in 36106/assignment/AT2/data/ → run Preparation → Baseline → Experiments → read the report.
+Put data in `36106/assignment/AT2/data/` → run **Preparation** → **Baseline** → **Experiments** → read the **report**.
